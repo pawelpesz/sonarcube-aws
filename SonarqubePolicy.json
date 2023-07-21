@@ -1,0 +1,29 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateKey",
+                "kms:GenerateRandom",
+                "kms:ListAliases",
+                "kms:ListKeys",
+                "s3:List*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "kms:*",
+            "Resource": [
+                "arn:aws:kms:*:537928299818:alias/*",
+                "arn:aws:kms:*:537928299818:key/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::sonarqube-*"
+        }
+    ]
+}
