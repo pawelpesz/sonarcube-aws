@@ -13,5 +13,5 @@ AWS Managed policies:
 
 Customer managed policies:
 
-* `sonarqube-terraform-*`` (created by the `bucket` submodule)
+* `sonarqube-terraform-*` (created by the `bucket` submodule)
 * `SonarqubePolicy` (defined in the corresponding JSON file)
