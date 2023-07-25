@@ -33,6 +33,7 @@ module "sonarqube" {
   public_subnets_ids  = module.vpc.public_subnets
   private_subnets_ids = module.vpc.private_subnets
   db_instance_size    = var.db_instance_size
+  db_instance_number  = var.db_instance_number
   enable_s3_logs      = false
   enable_ssl          = false
   lb_https_ports      = {}

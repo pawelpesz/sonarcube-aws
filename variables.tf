@@ -18,3 +18,8 @@ variable "db_instance_size" {
   description = "DB instance size"
   type        = string
 }
+
+variable "db_instance_number" {
+  description = "Number of DB instances"
+  type        = number
+}
