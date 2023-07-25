@@ -16,8 +16,8 @@
             "Effect": "Allow",
             "Action": "kms:*",
             "Resource": [
-                "arn:aws:kms:*:537928299818:alias/*",
-                "arn:aws:kms:*:537928299818:key/*"
+                "arn:aws:kms:*:*:alias/*",
+                "arn:aws:kms:*:*:key/*"
             ]
         },
         {
